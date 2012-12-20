@@ -3,3 +3,10 @@ CREATE TABLE board_user (
 	name varchar(100),
 	email varchar(100)
 );
+
+CREATE TABLE article(
+	article_seq INT PRIMARY KEY,
+	title varchar(100),
+	content varchar(100),
+	board_user_id varchar(10)
+);
