@@ -44,8 +44,8 @@ public class ArticleControllerTest {
 			.andExpect(model().attributeHasFieldErrors("article", "title"));
 	}
 	
-	/*@Test
-	public void testSaveArticleForm_�������������°��() throws Exception {
+	@Test
+	public void testSaveArticleForm_작성자정보가_없는_경우() throws Exception {
 		Article expectArticle = new Article();
 		expectArticle.setTitle("hello title");
 		expectArticle.setContents("hello contents");
@@ -59,5 +59,5 @@ public class ArticleControllerTest {
 			.andExpect(view().name("article/form"))
 			.andExpect(model().attributeHasFieldErrors("article", "member"))
 			.andExpect(model().attribute("article", expectArticle));
-	}*/
+	}
 }
